@@ -19,7 +19,7 @@ This application is built using Streamlit for the user interface and leverages L
 ## 🚀 How to Run
 
 ## Prerequisites
-Python 3.8+
+- Python 3.8+
 
 - An API key for a large language model (LLM) service. The code is configured for a model accessible via EURI_API_KEY, but can be adapted for others like OpenAI, Gemini, etc.
 
