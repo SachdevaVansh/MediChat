@@ -5,9 +5,12 @@ from app.chat_utils import get_chat_model,ask_chat_model
 #from app.config import EURI_API_KEY
 from app.pdf_utils import load_documents_from_pdfs,get_document_chunks
 from app.vectorstore_utils import create_faiss_index,retrieve_relevant_docs
+import os 
+from dotenv import load_dotenv
+load_dotenv()
 
-import os
-EURI_API_KEY = os.environ.get("EURI_API_KEY")
+#os.environ['EURI_API_KEY']=os.getenv('EURI_API_KEY')
+EURI_API_KEY = st.secrets["EURI_API_KEY"]
 
 st.set_page_config(
     page_title="MediChat Pro - Medical Assistant",
